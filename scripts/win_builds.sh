@@ -1,12 +1,12 @@
 #!/bin/bash
 
 build64(){
-    cmake -Bbuild -G"Visual Studio 16 2019" -A x64
+    cmake -Bbuild -G"Visual Studio 17 2022" -A x64
     cmake --build build --config Release -j4
 }
 
 build32(){
-    cmake -Bbuild32 -G"Visual Studio 16 2019" -A Win32
+    cmake -Bbuild32 -G"Visual Studio 17 2022" -A Win32
     cmake --build build32 --config Release -j4
 }
 

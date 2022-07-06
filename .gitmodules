@@ -7,3 +7,12 @@
 [submodule "modules/chowdsp_utils"]
 	path = modules/chowdsp_utils
 	url = https://github.com/Chowdhury-DSP/chowdsp_utils.git
+[submodule "modules/Gin"]
+	path = modules/Gin
+	url = https://github.com/FigBug/Gin.git
+[submodule "modules/animator"]
+	path = modules/animator
+	url = https://github.com/bgporter/animator.git
+[submodule "modules/drowaudio"]
+	path = modules/drowaudio
+	url = https://github.com/FigBug/drowaudio.git

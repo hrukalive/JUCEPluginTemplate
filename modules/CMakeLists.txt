@@ -7,6 +7,7 @@ subproject_version(chowdsp_utils chowdsp_version)
 message(STATUS "VERSION for chowdsp: ${chowdsp_version}")
 
 juce_add_modules(foleys_gui_magic)
+juce_add_modules(animator/Source/friz)
 
 include(cmake/WarningFlags.cmake)
 add_library(juce_plugin_modules STATIC)
@@ -16,6 +17,7 @@ target_link_libraries(juce_plugin_modules
         juce::juce_audio_utils
         juce::juce_dsp
         foleys_gui_magic
+        friz
         chowdsp_plugin_base
     PUBLIC
         juce::juce_recommended_config_flags

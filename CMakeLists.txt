@@ -3,7 +3,7 @@ set(CMAKE_OSX_DEPLOYMENT_TARGET "10.12" CACHE STRING "Minimum OS X deployment ta
 project(TempPlugin VERSION 1.0.0)
 
 set(CMAKE_CXX_STANDARD 17)
-set(COMPANY_NAME "chowdsp")
+set(COMPANY_NAME "nylp")
 set(PRODUCT_NAME "TempPlugin")
 
 add_subdirectory(modules)
@@ -34,8 +34,6 @@ juce_add_plugin(TempPlugin
     PLUGIN_CODE XXXX
     FORMATS ${JUCE_FORMATS}
     PRODUCT_NAME "${PRODUCT_NAME}"
-    
-    LV2_URI https://github.com/Chowdhury-DSP/TempPlugin
     
     MICROPHONE_PERMISSION_ENABLED TRUE
 )

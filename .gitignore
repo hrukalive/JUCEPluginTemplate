@@ -4,5 +4,5 @@ bin/
 
 # IDE settings
 .vscode/
+.history
 .idea/
-
