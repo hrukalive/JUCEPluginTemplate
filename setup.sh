@@ -59,6 +59,16 @@ rm setup.sh
 echo "Fetching submodules..."
 git submodule update --init --recursive
 
+# update JUCE
+(
+    echo "Updating submodule: JUCE..."
+    cd modules/JUCE
+    git fetch origin
+    git checkout master
+    git pull
+    git log -n 1
+)
+
 # update chowdsp_utils
 (
     echo "Updating submodule: chowdsp_utils..."
@@ -75,6 +85,36 @@ git submodule update --init --recursive
     cd modules/foleys_gui_magic
     git fetch origin
     git checkout chowdsp
+    git pull
+    git log -n 1
+)
+
+# update foleys_gui_magic
+(
+    echo "Updating submodule: Gin..."
+    cd modules/Gin
+    git fetch origin
+    git checkout master
+    git pull
+    git log -n 1
+)
+
+# update foleys_gui_magic
+(
+    echo "Updating submodule: animator..."
+    cd modules/animator
+    git fetch origin
+    git checkout master
+    git pull
+    git log -n 1
+)
+
+# update foleys_gui_magic
+(
+    echo "Updating submodule: drowaudio..."
+    cd modules/drowaudio
+    git fetch origin
+    git checkout master
     git pull
     git log -n 1
 )
